@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".MainHome">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Faça sua Aposta"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Titulo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Descrição">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Valor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="number|numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Forma de Pagamento"
+        android:layout_marginTop="25dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="174dp">
+
+        <RadioButton
+            android:id="@+id/pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pix" />
+
+        <RadioButton
+            android:id="@+id/credito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Crédito" />
+
+        <RadioButton
+            android:id="@+id/debito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Débito" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_apostar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Apostar"
+        app:backgroundTint="#FF628835" />
+
+
+
+    <Button
+        android:id="@+id/button_listarapostas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Listar Apostas"
+        app:backgroundTint="#FF628835" />
+</LinearLayout>
